@@ -1,0 +1,78 @@
+
+body {
+    
+}
+
+
+.navbar {
+    background-color: rgb(46, 104, 46);
+}
+
+.nav li a,
+header h1 {
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+}
+
+.nav li a:hover {
+    color: #fff;
+}
+
+.nav .nav-link.active {
+    background-color: #fff;
+    color: green;
+}
+
+.font {
+    font-family: 'Pacifico', cursive;
+}
+
+.text-colored {
+    color: rgb(46, 104, 46);
+}
+
+#sobre-o-site {
+    background-color: rgba(0, 200, 0, 0.1);
+}
+
+
+.nav-secao .nav-link.active {
+    background-color: rgb(46, 104, 46);
+    color: #fff;
+}
+
+.nav-secao .nav-link {
+    color: black;
+}
+
+#secao-animais,
+#contato {
+    background-color: rgba(0, 200, 0, 0.1);
+}
+
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#endereco {
+    
+}
+
+@media (max-width: 767px) {
+    header nav {
+        padding-top: 10px;
+    }
+    .carousel-item img {
+       height: 200px;
+    }
+
+    #secao-animais nav {
+        padding-bottom: 20px;
+    }
+}

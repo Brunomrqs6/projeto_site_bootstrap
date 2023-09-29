@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="fw-bold">Animais</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="nav" class="collapse navbar-collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item active">
+                        <a href="#sobre-o-site" class="nav-link">
+                            <i class="bi bi-newspaper me-1"></i>
+                            Sobre o Site
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#secao-animais" class="nav-link">
+                            <i class="bi bi-person-fill me-1"></i>
+                            Seção de Animais
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-telephone-fill me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./images/winter-1142029_1920.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/rebanho-de-cavalos-correndo-pela-agua.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/zebra-3044577_1920 (1).jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+            </div>
+
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scoll="true">
+        <section id="sobre-o-site">
+            <div class="container">
+                <h2 class="font text-center pt-4 pb-4"><span class="text-colored">Sobre </span>o Site</h2>
+                <div class="row">
+                    <div class="col-md-12 fs-5 pb-5">
+                        <p>
+                            Somos um site fascinante que se dedica a apresentar ao mundo a incrível diversidade de espécies animais que compartilham nosso planeta. Com uma vasta coleção de informações detalhadas e imagens deslumbrantes, este portal oferece uma experiência única de imersão na vida selvagem. Desde majestosos elefantes até minúsculos insetos, cada criatura tem seu lugar nesse repositório digital, contribuindo para nossa compreensão e apreço pela biodiversidade global. Além disso, o site também promove a conscientização sobre a importância da conservação e preservação desses tesouros naturais para as gerações futuras. Explore e descubra o esplendor da fauna que habita nosso planeta na palma de sua mão! 
+                        </p>
+                        <span class="fw-bold text-colored">(Texto feito pelo chat GPT)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="secao-animais">
+            <div class="container">
+                <h2 class="font text-center pt-4 pb-4">Seção de <span class="text-colored">animais</span></h2>
+                <div class="row">
+                    <aside class="col-md-1">
+                        <nav class="nav nav-pills flex-collumn nav-secao">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#felinos" class="btn font nav-link active">Felinos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aquaticos" class="btn font nav-link">Aquáticos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#aves" class="btn font nav-link">Aves</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#repteis" class="btn font nav-link">Répteis</button>
+                        </nav>
+                    </aside>
+    
+                    <div class="col-md-11">
+                        <div class="tab-content pb-3">
+                            <div class="tab-pane active" id="felinos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="/images/tigers-591359_1920.jpg" class="w-100 rounded" alt="">
+                                        <h3 class="font text-center pt-1 pb-2">Tigres</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisTigres">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisTigres">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Tigres</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">   
+                                                        Os tigres são grandes felinos conhecidos por sua beleza, força e graça. Eles são nativos da Ásia e são reconhecidos por suas listras distintas, que ajudam na camuflagem na vegetação densa de suas áreas de habitat. Os tigres são os maiores felinos do mundo, e sua aparência imponente os torna um dos animais mais icônicos do reino animal.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/lions-577104_1920.jpg" class="w-100 rounded" alt="">
+                                        <h3 class="font text-center pt-1 pb-2">Leões</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisLeoes">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisLeoes">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Leões</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">   
+                                                        Os leões são grandes felinos conhecidos por sua majestade e força. Eles são nativos da África e algumas partes da Índia. Os leões são animais sociais que vivem em grupos chamados de "orgulhos". Os machos são geralmente maiores que as fêmeas e têm uma juba de pelos que varia em cor e comprimento.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/cheetah-3749168_1920.jpg" class="w-100 rounded" alt="">
+                                        <h3 class="font text-center pt-1 pb-2">Guepardos</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisGuepardos">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisGuepardos">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Guepardos</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">   
+                                                        Os guepardos, também conhecidos como chitas, são felinos excepcionalmente velozes e graciosos, reconhecidos por sua habilidade de corrida impressionante. Eles são nativos principalmente da África, embora também possam ser encontrados em uma pequena parte do Irã.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/leopard-2895448_1920.jpg" class="w-100 rounded" alt="">
+                                        <h3 class="font text-center pt-1 pb-2">Leopardos</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisLeopardos">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisLeopardos">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Leopardos</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                            
+                                                        Os leopardos são grandes felinos que são conhecidos por sua habilidade de caça furtiva, adaptabilidade e pelagem elegante. Eles são nativos de várias regiões da África e da Ásia e têm uma ampla distribuição geográfica. Aqui estão algumas características importantes dos leopardos:
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                            <div class="tab-pane" id="aquaticos">
+                                <div class="row">
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/blacktip-shark-1294753_1920.jpg" class="w-100 rounded" alt="">
+                                        <h3 class="font text-center pt-1 pb-2">Tubarões</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisTubaroes">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisTubaroes">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Tubarões</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">   
+                                                        Os tubarões são um grupo diversificado de peixes cartilaginosos predadores que habitam os oceanos de todo o mundo. Eles têm uma série de características distintas que os tornam fascinantes e notáveis
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/whale-1850235_1920.jpg" class="w-100 rounded" alt="Baleia">
+                                        <h3 class="font text-center pt-1 pb-2">Baleias</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisBaleia">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisBaleia">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Baleias</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        As baleias são mamíferos marinhos incríveis e imponentes que habitam os oceanos de todo o mundo. Aqui estão algumas características e informações sobre esses magníficos animais
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/stingray-2311561_1920.jpg" class="w-100 rounded" alt="Arraia">
+                                        <h3 class="font text-center pt-1 pb-2">Arraias</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisArraia">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisArraia">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Arraias</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        As arraias são um grupo de peixes cartilaginosos que habitam principalmente os oceanos, mas também podem ser encontradas em águas costeiras. 
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/red-1283776_1920.jpg" class="w-100 rounded" alt="Polvo">
+                                        <h3 class="font text-center pt-1 pb-2">Cavalo Marinho</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisCavalo">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisCavalo">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Cavalo Marinho</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        O cavalo-marinho é um peixe único e fascinante que pertence à família Syngnathidae
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="tab-pane" id="aves">
+                                <div class="row">
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/adler-2386314_1920.jpg" class="w-100 rounded" alt="Águia">
+                                        <h3 class="font text-center pt-2 pb-2">Águias</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisAguias">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisAguias">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Águias</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">   
+                                                        As águias são aves de rapina majestosas e poderosas conhecidas por sua força, visão aguçada e capacidade de voo impressionante.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/emperor-penguins-429128_1920.jpg" class="w-100 rounded" alt="Pinguins">
+                                        <h3 class="font text-center pt-1 pb-2">Pinguins</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisPinguins">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisPinguins">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Pinguins</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        Os pinguins são aves marinhas notáveis e carismáticas, conhecidas por sua adaptação ao ambiente marinho e pelo estilo de vida peculiar.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/bird-7102006_1920.jpg" class="w-100 rounded" alt="Pombo">
+                                        <h3 class="font text-center pt-1 pb-2">Pombos</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisPombo">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisPombo">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Pombos</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        Os pombos, também conhecidos como pombos-domésticos ou pombos-correios, são aves que têm uma longa história de convivência com os seres humanos.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/vulture-3329814_1920.jpg" class="w-100 rounded" alt="Abutres">
+                                        <h3 class="font text-center pt-1 pb-2">Abutres</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisAbutre">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisAbutre">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Abutres</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        Os abutres são aves de rapina especializadas em se alimentar de carcaças de animais mortos. Embora muitas vezes sejam associados a imagens sombrias e carniça, eles desempenham um papel essencial nos ecossistemas e têm características únicas
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="tab-pane" id="repteis">
+                                <div class="row">
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/red-bellied-black-snake-6749361_1920.jpg" class="w-100 rounded" alt="Cobra">
+                                        <h3 class="font text-center pt-2 pb-2">Cobras</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisCobra">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisCobra">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Cobras</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">   
+                                                        As cobras são répteis pertencentes à subordem Serpentes. Elas são animais fascinantes, com uma ampla variedade de espécies, tamanhos e hábitos de vida. 
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/comodo-dragon-250668_1920.jpg" class="w-100 rounded" alt="Dragão">
+                                        <h3 class="font text-center pt-1 pb-2">Dragão de Komodo</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisDragao">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisDragao">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Dragão de Komodo</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        O dragão-de-Komodo (Varanus komodoensis) é uma espécie de lagarto monitor nativa das ilhas de Komodo, Rinca, Flores e outras ilhas menores na Indonésia. 
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/nile-crocodile-245013_1920.jpg" class="w-100 rounded" alt="Crocodilo">
+                                        <h3 class="font text-center pt-1 pb-2">Crocodilo</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisCrocodilo">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisCrocodilo">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Crocodilo</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        Os crocodilos são répteis semiaquáticos conhecidos por sua aparência pré-histórica, força formidável e comportamento predatório. Eles fazem parte da ordem Crocodylia e incluem várias espécies. 
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-3 pb-3">
+                                        <img src="/images/sea-2361247_1920.jpg" class="w-100 rounded" alt="Tartaruga">
+                                        <h3 class="font text-center pt-1 pb-2">Tartaruga Marinha</h3>
+                                        <button type="button" class="btn btn-outline-success w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#leiaMaisTartaruga">Leia Mais</button>
+        
+                                        <div class="modal fade" tabindex="-1" id="leiaMaisTartaruga">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-4">Tartaruga Marinha</h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">                                         
+                                                        Tartaruga-marinha é a família da ordem das tartarugas que inclui as espécies que habitam mares tropicais e subtropicais em todo o mundo.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <h2 class="font text-center pt-4 pb-4"><span class="text-colored">Fale </span>conosco</h2>
+                <div class="row">
+                    <div class="col-md-6 p-4">
+                        <h4 class="font text-colored">Contato</h4>
+                        <form>
+                            <label class="form-label font pt-3" for="nome">Seu nome</label>
+                            <input class="form-control" id="nome" type="text" required>
+                            <label class="form-label font pt-3" for="email">Seu e-mail</label>
+                            <input class="form-control" id="email" type="email" required >
+                            <label class="form-labe font pt-3" for="telefone">Seu telefome (opcional)</label>
+                            <input class="form-control" id="telefome" type="tel">
+                            <label class="form-label font pt-3"for="mensagem">Sua mensagem de texto</label>
+                            <textarea class="form-control" id="mensagem"></textarea>
+                            <div class="button pt-3">
+                                <button type="submit" class="btn btn-success fw-bold">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 p-4">
+                        <h4 class="font text-colored">Redes sociais</h4>
+                        <ul class="social-links">
+                            <li>
+                                <a href="#" title="Ir para o Instagram do Site" class="fs-5">
+                                    <i class="bi bi-instagram text-colored"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Ir para o Twitter do Site" class="fs-5 ms-1 me-1">
+                                    <i class="bi bi-twitter text-colored"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Ir para o Facebook do Site"  class="fs-5">
+                                    <i class="bi bi-facebook text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="row pt-5">
+                            <h4 class="font text-colored">Endereço</h4>
+                            <p class="fw-bold" id="endereco">
+                                Rua 25 Quadra 95 Conjunto L Avenida 99 - Brasília, DF
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
